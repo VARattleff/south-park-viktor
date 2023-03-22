@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Stan",
+    "nickname": "Toolshed Billy",
+    "image": "https://static.wikia.nocookie.net/southpark/images/c/c6/Stan-marsh-0.png/revision/latest?cb=20210107202918",
+    "occupation": "Student",
+    "age": 10,
+    "voicedBy": "Trey Parker",
+    "gender": "male",
+    "religion": "Roman Catholic",
+    "catchPhrase": "Aw, awww!",
+    "hairColor": "black",
+    "schoolGrade": 4,
+    "episodes": null,
+    "appearances": "undefined",
+    "firstAppearance": "S01E01"
+  },
+
+  {
+    "name": "Cartman",
+    "nickname": "The Coon",
+    "image": "https://upload.wikimedia.org/wikipedia/en/7/77/EricCartman.png",
+    "occupation": "Student",
+    "age": 10,
+    "voicedBy": "Trey Parker",
+    "gender": "male",
+    "religion": "Roman Catholic",
+    "catchPhrase": "Screw you guys, I'm going home!",
+    "hairColor": "brown",
+    "schoolGrade": 4,
+    "episodes": null,
+    "appearances": "undefined",
+    "firstAppearance": "S01E01"
+  }
+]
