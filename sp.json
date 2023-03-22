@@ -2,7 +2,7 @@
   {
     "name": "Stan",
     "nickname": "Toolshed Billy",
-    "image": "https://static.wikia.nocookie.net/southpark/images/c/c6/Stan-marsh-0.png/revision/latest?cb=20210107202918",
+    "image": "https://i.pinimg.com/474x/e8/56/e6/e856e6c010768bed89731fb07bae13bc.jpg",
     "occupation": "Student",
     "age": 10,
     "voicedBy": "Trey Parker",
@@ -12,7 +12,7 @@
     "hairColor": "black",
     "schoolGrade": 4,
     "episodes": null,
-    "appearances": "undefined",
+    "appearances": null,
     "firstAppearance": "S01E01"
   },
 
@@ -29,7 +29,24 @@
     "hairColor": "brown",
     "schoolGrade": 4,
     "episodes": null,
-    "appearances": "undefined",
+    "appearances": null,
+    "firstAppearance": "S01E01"
+  },
+
+  {
+    "name": "Kenny",
+    "nickname": "Princess Kenny",
+    "image": "http://southparkstudios.mtvnimages.com/shared/characters/kids/kenny-mccormick.png?height=165",
+    "occupation": "Student",
+    "age": 9,
+    "voicedBy": "Matt Stone (muffled) Eric Stough (unmuffled) Isaac Hayes",
+    "gender": "Male",
+    "religion": "Roman Catholic , Temporary: Blaintologist*",
+    "catchPhrase": "Mrrph rmph rmmph mrrphh!",
+    "hairColor": "Blond",
+    "schoolgrade": "4th Grade",
+    "episodes": "S01E01 to S22E5",
+    "appearances": 307,
     "firstAppearance": "S01E01"
   }
 ]

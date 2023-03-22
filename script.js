@@ -8,66 +8,49 @@ function ready() {
       return response.json();
     })
     .then(function (data) {
-      const characterList = document.getElementById("character-list");
-
       data.forEach(function (character) {
-        const li = document.createElement("li");
-        const characterDiv = document.createElement("div");
-        const characterName = document.createElement("span");
-        const characterEmail = document.createElement("span");
-        const viewButton = document.createElement("button");
-
-        characterName.textContent = character.name;
-        viewButton.textContent = character.name;
-
-        li.appendChild(characterDiv);
-        li.appendChild(viewButton);
-
-        characterList.appendChild(li);
-
-        viewButton.addEventListener("mouseup", function () {
-          showDetails(character);
-        });
+        showCharacters(character);
       });
     });
 }
 
-function showDetails(character) {
-  const detailView = document.getElementById("detail-view");
+function showCharacters(character) {
+  console.log(character);
 
-  const detailViewHTML = `
-    <h2>${character.name}</h2>
-     <li>
-       <ul> Name ${character.name}</ul>
-       <ul> Nickname ${character.nickname}</ul>
-       <ul> <img src='${character.image}'></ul>
-       <ul> Occupation ${character.occupation}</ul>
-       <ul> Age ${character.age}</ul>    
-       <ul> Voiced by ${character.voicedBy}</ul>
-       <ul> Gender ${character.gender}</ul>
-       <ul> Religion ${character.religion}</ul>
-       <ul> Catchphrase ${character.catchPhrase}</ul>
-       <ul> Haircolor ${character.hairColor}</ul>
-       <ul> School grade ${character.schoolGrade}</ul>
-       <ul> Episodes ${character.episodes}</ul>
-       <ul> Appearances ${character.appearances}</ul>
-       <ul> First Appearance ${character.firstAppearance}</ul>
-        
-    </li>
-  `;
+  var Myhtml = /*html*/ `
+<article>
+<img src=${character.image}>
+<h2>${character.name}</h2>
 
-  detailView.innerHTML = detailViewHTML;
-
-  const closeButton = document.getElementById("close-button");
-  closeButton.addEventListener("mouseup", function () {
-    detailView.innerHTML = "";
-  });
+`;
+  document.querySelector("#characters").insertAdjacentHTML("beforeend", Myhtml);
+  document
+    .querySelector("#characters article:last-child")
+    .addEventListener("click", function () {
+      characterClicked(character);
+    });
 }
 
-function closeButton() {
-  const closeButton = document.getElementById("close-button");
-  closeButton.addEventListener("mouseup", function () {
-    const detailView = document.getElementById("detail-view");
-    detailView.style.display = "none";
-  });
+function characterClicked(character) {
+  console.log("character clicked");
+  showCharacter(character);
+}
+
+function showCharacter(character) {
+  document.querySelector("#dialog-nickName").textContent = character.nickname;
+  document.querySelector("#dialog-age").textContent = character.age;
+  document.querySelector("#dialog-gender").textContent = character.gender;
+  document.querySelector("#dialog-hairColor").textContent = character.hairColor;
+  document.querySelector("#dialog-voiceBy").textContent = character.voicedBy;
+  document.querySelector("#dialog-religion").textContent = character.religion;
+  document.querySelector("#dialog-name").textContent = character.name;
+  document.querySelector("#dialog-firstAppearance").textContent =
+    character.firstAppearance;
+  document.querySelector("#dialog-appearances").textContent =
+    character.appearances;
+  document.querySelector("#dialog-episodes").textContent = character.episodes;
+
+  document.querySelector("#dialog-img").src = character.image;
+
+  document.querySelector("#dialog-characters").showModal();
 }

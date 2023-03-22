@@ -3,21 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width='device-width', initial-scale=1.0" />
+    <title>South Park</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
   </head>
   <body>
-    <body>
-      <h1>ting virker ish</h1>
-      <ul id="character-list">
-        <div class="character-info"></div>
-      </ul>
+    <header>
+      <h1>South Park</h1>
+    </header>
+    <main>
+      <section id="characters" class="grid-container"></section>
+    </main>
+    <dialog id="dialog-characters">
+      <section id="dialog-grid"></section>
+      <figure></figure>
+      <article>
+        <h2><span id="dialog-name"></span></h2>
+        <div id="detail-view"></div>
+        <p id="dialog-quote"></p>
 
-      <div id="detail-view"></div>
-      <button id="close-button">Close</button>
-    </body>
+        <ul id="character-list">
+          <div class="character-info"></div>
+        </ul>
 
+        <div id="detail-view"></div>
+
+        <ul>
+          <li>
+            Nickname: <span id="dialog-nickName"></span>
+            <br />
+          </li>
+          <li>
+            Age: <span id="dialog-age"></span>
+            <br />
+          </li>
+          <li>
+            Gender: <span id="dialog-gender"></span>
+            <br />
+          </li>
+          <li>
+            Hair color: <span id="dialog-hairColor"></span>
+            <br />
+          </li>
+          <li>
+            Grade in School: <span id="dialog-grade"></span>
+            <br />
+          </li>
+          <li>
+            Religion: <span id="dialog-religion"></span>
+            <br />
+          </li>
+          <li>
+            Voice by: <span id="dialog-voiceBy"></span>
+            <br />
+          </li>
+          <li>
+            Episodes: <span id="dialog-episodes"></span>
+            <br />
+          </li>
+          <li>
+            First appearance: <span id="dialog-firstAppearance"></span>
+            <br />
+          </li>
+          <li>
+            Appearance: <span id="dialog-appearances"></span>
+            <br />
+          </li>
+
+          <img id="dialog-img" />
+        </ul>
+      </article>
+      <form method="dialog">
+        <button id="btn-cancel">Cancel</button>
+      </form>
+    </dialog>
+    <footer>
+      <p>Made by vira</p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
