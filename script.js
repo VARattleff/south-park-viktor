@@ -26,7 +26,7 @@ function showCharacters(character) {
   document.querySelector("#characters").insertAdjacentHTML("beforeend", Myhtml);
   document
     .querySelector("#characters article:last-child")
-    .addEventListener("click", function () {
+    .addEventListener("mouseup", function () {
       characterClicked(character);
     });
 }
