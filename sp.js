@@ -20,7 +20,7 @@ function showCharacters(character) {
   var Myhtml = /*html*/ `
 <article class='${character.hairColor}'> 
 <img src=${character.image}>
-<h2>${character.name}</h2>
+<h2 class='text_pulse'>${character.name}</h2>
 
 `;
   document.querySelector("#characters").insertAdjacentHTML("beforeend", Myhtml);
