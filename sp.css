@@ -40,10 +40,11 @@ a {
   cursor: pointer;
   color: #0088cc;
   text-decoration: none;
+  text-align: center;
 }
 
 img {
-  width: 100%;
+  width: 500px;
   height: auto;
 }
 
@@ -70,9 +71,13 @@ footer {
 
 /* ---------- main page styling ---------- */
 main {
+  background-image: url(img/background.jpg);
+  aspect-ratio: 16/9;
+  background-size: cover;
+  background-attachment: fixed;
   animation: fadeIn 0.4s;
   padding: 137px 0 0;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 1px solid black;
 }
 
@@ -128,7 +133,7 @@ main {
 }
 
 .grid-container > article:hover {
-  box-shadow: 0 8px 16px 0 var(--green);
+  box-shadow: 0 8px 30px 0 green;
 }
 
 .grid-container img {
@@ -187,4 +192,8 @@ input {
   border: 2px solid var(--green);
   display: block;
   background: var(--white);
+}
+
+#characters article {
+  background-color: var(--);
 }

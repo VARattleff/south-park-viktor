@@ -3,7 +3,7 @@
 window.addEventListener("load", ready);
 
 function ready() {
-  fetch("sp.json")
+  fetch("test.json")
     .then(function (response) {
       return response.json();
     })
@@ -18,7 +18,7 @@ function showCharacters(character) {
   console.log(character);
 
   var Myhtml = /*html*/ `
-<article>
+<article class=''> 
 <img src=${character.image}>
 <h2>${character.name}</h2>
 
