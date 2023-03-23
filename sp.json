@@ -1,16 +1,18 @@
-{
-  "name": "Stan",
-  "nickname": "Toolshed Billy",
-  "image": "https://i.pinimg.com/736x/4a/d2/9a/4ad29a5eb38914f05512402919a36df8.jpg",
-  "occupation": "Student",
-  "age": 10,
-  "voicedBy": "Trey Parker",
-  "gender": "male",
-  "religion": "Roman Catholic",
-  "catchPhrase": "Aw, awww!",
-  "hairColor": "black",
-  "schoolGrade": 4,
-  "episodes": null,
-  "appearances": null,
-  "firstAppearance": "S01E01"
-}
+[
+  {
+    "name": "Stan",
+    "nickname": "Toolshed Billy",
+    "image": "https://i.pinimg.com/736x/4a/d2/9a/4ad29a5eb38914f05512402919a36df8.jpg",
+    "occupation": "Student",
+    "age": 10,
+    "voicedBy": "Trey Parker",
+    "gender": "male",
+    "religion": "Roman Catholic",
+    "catchPhrase": "Aw, awww!",
+    "hairColor": "black",
+    "schoolGrade": 4,
+    "episodes": null,
+    "appearances": null,
+    "firstAppearance": "S01E01"
+  }
+]
