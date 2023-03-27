@@ -212,12 +212,39 @@ input {
   color: white;
 }
 
+.grid-container > article.blonde {
+  background-color: blue;
+  color: white;
+}
+
 .grid-container > article.brown {
   background-color: white;
 }
 
 .grid-container > article.black {
   background-color: orange;
+}
+
+.grid-container > article.red {
+  background-color: fuchsia;
+}
+
+.grid-container > article.Bleach {
+  background-color: green;
+}
+
+.grid-container > article.gray {
+  background-color: turquoise;
+}
+.grid-container > article.grey {
+  background-color: turquoise;
+}
+.grid-container > article.brown {
+  background-color: purple;
+}
+
+.grid-container > article.blue {
+  background-color: brown;
 }
 
 .fixed1 {

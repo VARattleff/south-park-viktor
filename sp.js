@@ -2,23 +2,40 @@
 
 window.addEventListener("load", ready);
 
-function ready() {
-  fetch("test.json")
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      data.forEach(function (character) {
-        showCharacters(character);
-      });
-    });
+//************************* ALTERNATIV med then  **************************/
+
+// function ready() {
+//   fetch("test.json")
+//     .then(function (response) {
+//       return response.json();
+//     })
+//     .then(function (data) {
+//       data.forEach(function (character) {
+//         showCharacters(character);
+//       });
+//     });
+// }
+
+//************************* ALTERNATIV med then  **************************/
+
+async function ready() {
+  const character = await displayCharacters(
+    "https://cederdorff.github.io/dat-js/05-data/southpark.json"
+  );
+  character.forEach(showCharacters);
+}
+
+async function displayCharacters(character) {
+  const response = await fetch(character);
+  const data = await response.json();
+  return data;
 }
 
 function showCharacters(character) {
   console.log(character);
 
   var Myhtml = /*html*/ `
-<article class='${character.hairColor}'> 
+<article class='${character.hairColor} ${character.haircolor}'> 
 <img src=${character.image}>
 <h2 class='text_pulse'>${character.name}</h2>
 
