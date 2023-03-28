@@ -133,11 +133,13 @@ main {
 .grid-container > article {
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
   padding: 1.5em;
-  background-color: var(--white);
   transition: 0.5s;
   animation: fadeIn 0.5s;
   cursor: pointer;
   border-radius: 20%;
+  background-image: url(img/mainBackground.jpg);
+  background-blend-mode: hard-light;
+  color: white;
 }
 
 .grid-container > article:hover {
@@ -205,46 +207,6 @@ input {
 
 #characters article {
   background-color: var(--);
-}
-
-.grid-container > article.blond {
-  background-color: blue;
-  color: white;
-}
-
-.grid-container > article.blonde {
-  background-color: blue;
-  color: white;
-}
-
-.grid-container > article.brown {
-  background-color: white;
-}
-
-.grid-container > article.black {
-  background-color: orange;
-}
-
-.grid-container > article.red {
-  background-color: fuchsia;
-}
-
-.grid-container > article.Bleach {
-  background-color: green;
-}
-
-.grid-container > article.gray {
-  background-color: turquoise;
-}
-.grid-container > article.grey {
-  background-color: turquoise;
-}
-.grid-container > article.brown {
-  background-color: purple;
-}
-
-.grid-container > article.blue {
-  background-color: brown;
 }
 
 .fixed1 {

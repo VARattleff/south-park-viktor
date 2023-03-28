@@ -22,6 +22,7 @@ async function ready() {
   const character = await displayCharacters(
     "https://cederdorff.github.io/dat-js/05-data/southpark.json"
   );
+
   character.forEach(showCharacters);
 }
 
