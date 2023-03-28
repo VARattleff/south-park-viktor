@@ -1,24 +1,4 @@
 body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: #f5f5f5;
-  color: #333;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-}
-
-h1 {
-  font-size: 28px;
-  margin: 0;
-  text-align: center;
-}
-
-main {
   background-image: url(img/background.jpg);
   aspect-ratio: 16/9;
   background-size: cover;
@@ -29,7 +9,18 @@ main {
   border: 1px solid black;
 }
 
-/* Footer styles */
+header {
+  position: sticky;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
 footer {
   position: fixed;
   top: 93%;
@@ -39,8 +30,39 @@ footer {
   padding: 10px 20px;
   text-align: center;
   width: 100%;
+  height: 100px;
+  left: -1%;
 }
 
-#link-til-opg {
-  text-align: center;
+.fixed1 {
+  position: fixed;
+}
+
+main {
+  position: absolute;
+  top: 50vh;
+  left: 37vw;
+  border: solid 10px black;
+  color: white;
+  background-color: black;
+  font-size: 30px;
+}
+
+.text_pulse {
+  transform: scale(1);
+  animation: pulsetext 1s infinite;
+}
+
+@keyframes pulsetext {
+  0% {
+    transform: scale(0.95);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.95);
+  }
 }
