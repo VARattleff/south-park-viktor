@@ -137,9 +137,9 @@ main {
   animation: fadeIn 0.5s;
   cursor: pointer;
   border-radius: 20%;
-  background-image: url(img/mainBackground.jpg);
-  background-blend-mode: hard-light;
-  color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  color: black;
 }
 
 .grid-container > article:hover {
