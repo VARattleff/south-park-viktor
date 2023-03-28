@@ -35,7 +35,7 @@ function showCharacters(character) {
   console.log(character);
 
   var Myhtml = /*html*/ `
-<article class='${character.hairColor} ${character.haircolor}'> 
+<article class='${character.hairColor}'> 
 <img src=${character.image}>
 <h2 class='text_pulse'>${character.name}</h2>
 
