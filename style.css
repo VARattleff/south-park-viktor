@@ -20,6 +20,16 @@ header {
   left: 0;
   right: 0;
   z-index: 9999;
+  background: -webkit-linear-gradient(
+    top,
+    #cc0223 28%,
+    #016b14 29%,
+    #016b14 44%,
+    #016b14 63%,
+    #3b01c1 64%,
+    #3b01c1 85%,
+    #febf01 85%
+  );
 }
 
 footer {
@@ -33,6 +43,16 @@ footer {
   width: 100%;
   height: 100px;
   left: -1%;
+  background: -webkit-linear-gradient(
+    top,
+    #cc0223 28%,
+    #016b14 29%,
+    #016b14 44%,
+    #016b14 63%,
+    #3b01c1 64%,
+    #3b01c1 85%,
+    #febf01 85%
+  );
 }
 
 .fixed1 {
@@ -43,10 +63,20 @@ main {
   position: absolute;
   top: 50vh;
   left: 37vw;
-  border: solid 10px black;
-  color: orange;
+  border: dotted 10px white;
+  color: white;
   background-color: black;
   font-size: 30px;
+  background: -webkit-linear-gradient(
+    top,
+    #cc0223 28%,
+    #016b14 29%,
+    #016b14 44%,
+    #016b14 63%,
+    #3b01c1 64%,
+    #3b01c1 85%,
+    #febf01 85%
+  );
 }
 
 .text_pulse {
