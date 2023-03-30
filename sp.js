@@ -5,7 +5,7 @@ window.addEventListener("load", ready);
 //************************* ALTERNATIV med then  **************************/
 
 // function ready() {
-//   fetch("test.json")
+//   fetch("sp.json")
 //     .then(function (response) {
 //       return response.json();
 //     })

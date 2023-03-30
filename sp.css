@@ -18,6 +18,8 @@ h2 {
   font-weight: 500;
   letter-spacing: 0.1px;
   text-align: center;
+  color: black;
+  filter: drop-shadow(0 0 20px rgb(30, 234, 7));
 }
 
 h3 {
@@ -214,6 +216,7 @@ input {
 .text_pulse {
   transform: scale(1);
   animation: pulsetext 1s infinite;
+  filter: drop-shadow(0 0 20px rgb(30, 234, 7));
 }
 
 @keyframes pulsetext {
@@ -233,7 +236,6 @@ input {
 ul {
   width: 600px;
   height: auto;
-
   color: black;
   backdrop-filter: blur(10px);
   filter: drop-shadow(0 0 20px rgb(30, 234, 7));
@@ -242,4 +244,9 @@ ul {
 a {
   color: white;
   font-size: 18px;
+}
+
+h2::first-letter {
+  font-size: 200%;
+  color: orange;
 }

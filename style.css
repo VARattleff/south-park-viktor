@@ -63,7 +63,7 @@ main {
   position: absolute;
   top: 50vh;
   left: 37vw;
-  border: dotted 10px white;
+  border: dotted 5px orange;
   color: white;
   background-color: black;
   font-size: 30px;
